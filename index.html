@@ -3,65 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets//css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
 
-    <title>Document</title>
+    <title>Hello Easter-egg</title>
   </head>
   <body>
-    <div class="hero">
-      <div class="nav">
-        <div class="nav__logo">
-          <img src="./assets/images/logo.png" alt="logo" />
-        </div>
-        <div class="nav__link">
-          <i class="fa fa-close" onclick="handleClose()"></i>
-          <ul>
-            <li><a href="#">LINK</a></li>
-            <li><a href="#">LINK</a></li>
-            <li><a href="#">LINK</a></li>
-            <li><a href="#">LINK</a></li>
-          </ul>
-          <button class="btn" type="button">Sign up</button>
-          <div class="nav__social">
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-facebook"></i>
-          </div>
-        </div>
-        <i class="fa fa-bars" onclick="handleOpen()"></i>
-      </div>
-      <div class="hero__title">
-        <h1>
-          If you don’t <span>practice</span> <br />
-          you don’t <span>deserve to win </span>
-        </h1>
-        <button class="btn" type="button">Explore</button>
-      </div>
-      <div class="nav-vertical">
-        <div class="nav-vertical__search">
-          <i class="fa fa-search"></i>
-        </div>
-        <div class="nav-vertical__social">
-          <i class="fa fa-twitter"></i>
-          <i class="fa fa-instagram"></i>
-          <i class="fa fa-facebook"></i>
-        </div>
-      </div>
-    </div>
-
-    <script>
-      const menuLat = document.querySelector(".nav__link");
-      function handleClose() {
-        menuLat.style.right = "-200px";
-      }
-
-      function handleOpen() {
-        menuLat.style.right = "0";
-      }
-    </script>
+    <h1>easter-egg-v1</h1>
   </body>
+  <script type="module" src="index.js"></script>
 </html>
