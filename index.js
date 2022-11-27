@@ -58,13 +58,11 @@ const pikachu = () => {
   sound.play();
 };
 
-const dragon = () => {
-  const data = 'https://ejbcode.github.io/eggs/images/pkame.gif';
+const kame = () => {
+  const data = 'https://ejbcode.github.io/eggs/images/kame.gif';
   const allWindow = document.createElement('div');
-  let img = new Image();
+  const img = new Image();
   img.src = data + '?a=' + Math.random();
-
-  img.src = data;
   img.style.pointerEvents = 'none';
   img.style.width = '450px';
   img.style.height = '349px';
@@ -105,14 +103,11 @@ const dragon = () => {
     }
   }, 2500);
 
-  // window.setTimeout(function () {
-  //   img.style.bottom = '-149px';
-  // }, 3000);
   window.setTimeout(function () {
     img.parentNode.removeChild(img);
 
     allWindow.parentNode.removeChild(allWindow);
-  }, 2500);
+  }, 4200);
   const sound = new Audio('data:audio/mp3;base64,' + kameSound);
   sound.playbackRate = 1.5;
   sound.play();
@@ -150,7 +145,7 @@ const bicente = () => {
   const data = 'https://ejbcode.github.io/eggs/images/bice.gif';
 
   const img = new Image();
-  img.src = data;
+  img.src = data + '?a=' + Math.random();
   img.style.width = '300px';
   img.style.height = '250px';
   img.style.transition = '1.1s all';
@@ -182,7 +177,7 @@ const koggy = () => {
   const data = 'https://ejbcode.github.io/eggs/images/koggy.gif';
 
   const img = new Image();
-  img.src = data;
+  img.src = data + '?a=' + Math.random();
   img.style.pointerEvents = 'none';
   img.style.width = '250px';
   img.style.height = '149px';
