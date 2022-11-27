@@ -1,6 +1,3 @@
-// import { knock, pikachuSound } from './audio.js';
-// const { pikachuSound, knock } = require('./audio.js');
-
 const pikachu = () => {
   const data = 'https://ejbcode.github.io/eggs/images/pikachu.gif';
 
@@ -96,20 +93,20 @@ const kame = () => {
           if (x % 2 === 0) {
             allWindow.style.opacity = 0;
           } else {
-            allWindow.style.opacity = 0.4;
+            allWindow.style.opacity = 0.6;
           }
         }, x * 25);
       })(x);
     }
-  }, 2500);
+  }, 2200);
 
   window.setTimeout(function () {
     img.parentNode.removeChild(img);
 
     allWindow.parentNode.removeChild(allWindow);
-  }, 4200);
+  }, 3800);
   const sound = new Audio('data:audio/mp3;base64,' + kameSound);
-  sound.playbackRate = 1.5;
+  sound.playbackRate = 1.7;
   sound.play();
 };
 
