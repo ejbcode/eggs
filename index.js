@@ -223,8 +223,7 @@ const boku = () => {
 };
 
 const nyancat = () => {
-  // const data = 'https://ejbcode.github.io/eggs/images/nyancat.gif';
-  const data = './images/';
+  const data = 'https://ejbcode.github.io/eggs/images/nyancat.gif';
 
   const img = new Image();
   img.src = data;
