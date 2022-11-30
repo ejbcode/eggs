@@ -177,7 +177,7 @@ const koggy = () => {
   img.src = data + '?a=' + Math.random();
   img.style.pointerEvents = 'none';
   img.style.width = '250px';
-  img.style.height = '149px';
+  img.style.height = '199px';
   img.style.transition = '1s all';
   img.style.position = 'fixed';
   img.style.left = 'calc(50% - 125px)';
