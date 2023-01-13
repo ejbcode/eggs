@@ -138,7 +138,7 @@ const sponge = () => {
   }, 7300);
 };
 
-const bicente = () => {
+const bice1 = () => {
   const data = 'https://ejbcode.github.io/eggs/images/bice.gif';
 
   const img = new Image();
@@ -299,6 +299,35 @@ const allMight = () => {
   }, 3100);
 };
 
+const bicente = () => {
+  const data = 'https://ejbcode.github.io/eggs/images/bicente.gif';
+
+  const img = new Image();
+  img.src = data + '?a=' + Math.random();
+  img.style.pointerEvents = 'none';
+  img.style.width = '300px';
+  img.style.height = '300px';
+  img.style.transition = '1s all';
+  img.style.position = 'fixed';
+  img.style.left = 'calc(50% - 125px)';
+  img.style.bottom = '-149px';
+  img.style.zIndex = 999999;
+
+  document.body.appendChild(img);
+
+  window.setTimeout(function () {
+    img.style.bottom = '30px';
+  }, 50);
+
+  window.setTimeout(function () {
+    img.style.bottom = '-300px';
+  }, 4300);
+
+  window.setTimeout(function () {
+    img.parentNode.removeChild(img);
+  }, 5000);
+};
+
 const listenKeyPress = () => {
   let keysPressed = [];
   const MAX_KEY_REGISTER = 8;
@@ -328,8 +357,8 @@ const listenKeyPress = () => {
       animation: allMight,
     },
     {
-      keySequence: 'bicente',
-      animation: bicente,
+      keySequence: 'bice1',
+      animation: bice1,
     },
     {
       keySequence: 'nyancat',
@@ -338,6 +367,10 @@ const listenKeyPress = () => {
     {
       keySequence: 'kame',
       animation: kame,
+    },
+    {
+      keySequence: 'bicente',
+      animation: bicente,
     },
   ];
 
